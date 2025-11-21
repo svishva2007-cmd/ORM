@@ -38,7 +38,6 @@ Execute Django admin using localhost and create details for 10 entries
 ## PROGRAM
 
 
-
 ## OUTPUT
 
 <img width="1919" height="1079" alt="Screenshot 2025-11-20 114910" src="https://github.com/user-attachments/assets/233aec96-4cfe-459e-9533-070f4a650edf" />
