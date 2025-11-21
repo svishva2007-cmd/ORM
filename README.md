@@ -36,11 +36,30 @@ Apply the migration files of the created app to the database
 Execute Django admin using localhost and create details for 10 entries
 
 ## PROGRAM
+~~~
+from django.db import models 
+from django.contrib import admin
+class amazon_DB (models.Model):
+     Product_name=models.CharField(max_length=20)
+     S_no=models.IntegerField (primary_key=True)
+     Product_type=models.CharField(max_length=20)
+     Price=models.CharField(max_length=20)
+     Year=models.IntegerField()
+class amazon_DBAdmin(admin.ModelAdmin):
+     list_display=["Product_name","S_no","Product_type","Price","Year"]
+~~~
 
+~~~
+from django.contrib import admin
+from .models import amazon_DB,amazon_DBAdmin
+admin.site.register(amazon_DB,amazon_DBAdmin)
+~~~
 
 ## OUTPUT
 
 <img width="1919" height="1079" alt="Screenshot 2025-11-20 114910" src="https://github.com/user-attachments/assets/233aec96-4cfe-459e-9533-070f4a650edf" />
+<img width="1059" height="899" alt="Screenshot 2025-11-21 153010" src="https://github.com/user-attachments/assets/3320bf44-d5c0-486d-920f-e8dd299877fb" />
+
 
 
 ## RESULT
